@@ -2,19 +2,19 @@
 # ExplorationActivity1
 
 ## Introduction
-My name is Daphne Dairo-Singerr, and for my first exploration acitivity, I have created a small interactive game using the Selenium library in Python. This game includes content from the Five Nights at Freddy's horror game. Please read the _Before You Play_ section before running the game:
+My name is Daphne Dairo-Singerr, and for my first exploration acitivity, I created a small interactive game using the Selenium library in Python. This game includes content from the Five Nights at Freddy's horror game. Please read the _Before You Play_ section before running the game:
 
 ## Before You Play
 - Make sure you have headphones connected to your device. 
-  - Please have the volumn at a decent level. Nothing too loud.
-    - **This game does not include loud sounds, but make sure you can hear a Youtube video at a normal volumn.**
+  - Please have the volume at a decent level. Nothing too loud.
+    - **This game does not include loud sounds, but make sure you can hear a Youtube video at a comfortable volume.**
 - You will need to switch between your terminal to enter input and the automated Chrome window.
 - When the automated Chrome window is running, do not click anything on the window.
   - Only click on the automated Chrome window when your terminal asks to do so.
 - This game is Five Nights at Freddy's related. 
   - For those who do not know FNAF, it is a horror video game series. 
   - **Do not worry, there are no jumpscares or loud sounds included in this interactive game.**
-- You will need to know how each of the FNAF 1 animatronics look. Click [here]() to see them.
+- You will need to know how each of the FNAF 1 animatronics look. Click [here](https://drive.google.com/drive/folders/1CPBRvkJwlZiilyfd1J26oExbrE29KRmt?usp=sharing) to see them.
   - **Again, there is nothing scary included in the above link.**
   - All media is included within a Google Drive link, so you will only see what is needed to be seen for **this** game.
 
@@ -23,7 +23,7 @@ As stated in the introduction, this sample program demonstrates the Selenium lib
 
 ### How does someone run your program?
 Follow the listed steps below:
-- Under the green code button (show a pic), click **Download Zip**
+- Under the green code button ![Code Button](/Users/ddairos/Documents/ea1_pics/code_button.png), click **Download Zip**
 - Extract the .zip file contents into your Downloads folder on your device for simplicity.
 - If using the Terminal:
   - On your terminal, change to the project directory:
@@ -33,7 +33,7 @@ Follow the listed steps below:
   - Type `python3 main.py` to run the program.
 - If using an IDE:
   - Open the project folder in the **Downloads** directory (**File -> Open Folder**).
-  - In the IDE terminal, type `pip3 install selenium`.
+  - In the IDE terminal, type `pip3 install selenium` to install the selenium library.
   - Run the code on _main.py_.
 
 ### What purpose does your program serve?
