@@ -1,9 +1,6 @@
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-from choice import sel_text, intro, expected_title
-import time
-#clean imports later
+from choice import intro, expected_title
 
 driver = webdriver.Chrome()
 driver.get("https://blankslate.io")
