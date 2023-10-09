@@ -1,6 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from choice import intro, expected_title
+from functions import intro, expected_title
 
 driver = webdriver.Chrome()
 driver.get("https://blankslate.io")

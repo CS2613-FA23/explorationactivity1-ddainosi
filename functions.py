@@ -21,14 +21,10 @@ def intro(textArea, driver):
     sel_text(textArea, SHORTER_WAIT, "Hello! My name is Daphne, and welcome to my first exploration activity!")
     sel_text(textArea, SHORTER_WAIT, "I am showcasing the Selenium library using Python!")
     sel_text(textArea, SHORTER_WAIT, "Today, we'll be playing a small interactive game")
-    sel_text(textArea, SHORTER_WAIT, "Make sure to have headphones plugged into your device")
     sel_text(textArea, NORMAL_WAIT, "Before we play, you will have to click back to your terminal or back to automated Chrome when asked")
     sel_text(textArea, SHORTEST_WAIT, "Alright, shall we get started then?")
-    sel_text(textArea, SHORTER_WAIT, "With the new Five Nights at Freddy's movie coming out soon, I was inspired")
-    sel_text(textArea, SHORTER_WAIT, "If you don't know what FNAF is, then this game will make no sense, sorry man")
     sel_text(textArea, NORMAL_WAIT, "I have a question to ask you, click back to your terminal to answer it")
     fav_animatronic(textArea, driver)
-
 
 #sel_text(textArea, 3, "")
 
