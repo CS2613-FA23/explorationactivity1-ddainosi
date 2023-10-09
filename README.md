@@ -23,7 +23,7 @@ As stated in the introduction, this sample program demonstrates the Selenium lib
 
 ### How does someone run your program?
 Follow the listed steps below:
-- Under the green code button ![Code Button](https://drive.google.com/file/d/1-1COv5n31KExwMz9HxO7J-G2FqsnNIQ3/view?usp=drive_link), click **Download Zip**
+- Under the green <span style="color:green">**Code**</span> button on GitHub, click **Download Zip**
 - Extract the .zip file contents into your Downloads folder on your device for simplicity.
 - If using the Terminal:
   - On your terminal, change to the project directory:
