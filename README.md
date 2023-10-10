@@ -23,13 +23,13 @@ As stated in the introduction, this sample program demonstrates the Selenium lib
 
 ### How does someone run your program?
 Follow the listed steps below:
-- Under the green **Code** button on GitHub, click **Download Zip**
+- Under the green ![Code](/media/code_button.png) button on GitHub, click **Download Zip**
 - Extract the .zip file contents into your Downloads folder on your device for simplicity.
 - If using the Terminal:
   - On your terminal, change to the project directory:
     - In your terminal, type `cd Downloads/explor` then press the **Tab** button on your keyboard and hit **Enter**.
     - You should now be in the project directory.
-  - In the IDE terminal, type `pip3 install selenium` to install the selenium library.
+  - In the terminal, type `pip3 install selenium` to install the selenium library.
   - Type `python3 main.py` to run the program.
 - If using an IDE:
   - Open the project folder in the **Downloads** directory (**File -> Open Folder**).
@@ -45,4 +45,13 @@ This includes:
 - Navigating to a different website
 
 ### What would be some sample input/output?
-Throughout the game, it will ask you to type either one or two characters in the terminal. Without spoiling anything, your choices will either lead to the _good_ or _bad_ ending. The inputs you can choose from will be listed in your terminal.
+Throughout the game, you will be asked to type either one or two characters in the terminal. Without spoiling anything, your choices will either lead to the _good_ or _bad_ ending. The inputs you can choose from will be listed in your terminal.
+Sample input would be:
+```
+Who is your favourite FNAF 1 animatronic? Select one of the 4 options below:
+(f)reddy
+(b)onnie
+(c)hica
+(fo)xy
+Your answer: f
+```
