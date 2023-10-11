@@ -34,7 +34,7 @@ def expected_title(driver, title):
             EC.title_is(title)
         )
     except TimeoutException as e:
-        print("TimeoutException: " +e)
+        print("TimeoutException: " + e)
 
 #Function that waits for an element to be clickable before clicking it
 def click_button(driver, element):

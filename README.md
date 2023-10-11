@@ -43,6 +43,7 @@ This includes:
 - Images being clicked
 - Videos being played
 - Navigating to a different website
+Also, my program serves for a source of entertainment. I wished to implement a way for the user to also interact with the program and not just sit and wait as it runs.
 
 ### What would be some sample input/output?
 Throughout the game, you will be asked to type either one or two characters in the terminal. Without spoiling anything, your choices will either lead to the _good_ or _bad_ ending. The inputs you can choose from will be listed in your terminal:
