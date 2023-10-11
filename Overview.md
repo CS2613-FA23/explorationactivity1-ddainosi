@@ -4,9 +4,39 @@ The library I chose for my first exploration activity was Selenium. I showcased 
 ## About Selenium
 q2
 
-q3
+### Functionalities
+- `driver = webdriver.Chrome()` Lets the program know that the testing will be happening on the Chrome web browser
+- `driver.get("https://blankslate.io")` The web browser (Chrome in this case) switches to the provided link
+- `textArea = driver.find_element(By.CSS_SELECTOR, "textarea.note-area")` Assigns the provided CSS selector to the variable _textArea_. You can read about how to get and specify CSS selectors [here](https://www.swtestacademy.com/css-selenium/)
+- `textArea.send_keys(text)` Enters the provided text into an input element
+- `textArea.clear()` Clears the content in an input element
+- `button.click()` Clicks the button. `button` is a variable in this piece of code. A way to assign `button` a web element is by using a CSS selector like above.
+- `driver.close()` Closes the web browser
+```Python
+def click_button(driver, element):
+    try:
+        button = WebDriverWait(driver, DEFAULT_WAIT).until(
+            EC.element_to_be_clickable((By.CSS_SELECTOR, element))
+        )
+        button.click()
+    except NoSuchElementException as e:
+        print("NoSuchElementException: " + e)
+```
+This function is called whenever a button is needed to be clicked. First, it waits until the element is clickable and then clicks it. If the element is not clickable during after the specified time (in seconds), then an _NoSuchElementException_ will be caught. I made sure to catch the exception so that the program will not crash [[ref]](https://coderslegacy.com/python/selenium-tutorial-element_to_be_clickable-function/).
+```Python
+def expected_title(driver, title):
+    try:
+        WebDriverWait(driver, DEFAULT_WAIT).until(
+            EC.title_is(title)
+        )
+    except TimeoutException as e:
+        print("TimeoutException: " + e)
+```
+This function is called whenever the program switches to a new window. It makes sure that the title of the window matches the given title within a given amount of seconds. The variable `title` is always given the value `driver.title` which returns the title of the current window. If the title does not match the given title, then a TimeoutException will be caught [[ref]](https://www.geeksforgeeks.org/exceptions-selenium-python/).
 
-q4
+You can read about Selenium exception handling [here](https://www.geeksforgeeks.org/exceptions-selenium-python/).
+
+Selenium was created in 2004 by Jason Huggins, an engineer working in ThoughtWorks. It was originally named JavaScriptTestRunner but then renamed it as it eventually became an open source tool to be usable with multiple programming langueages [[ref]](https://www.webomates.com/blog/software-testing/selenium-testing/#:~:text=Selenium%20was%20initially%20developed%20by,the%20need%20to%20curb%20monotony.).
 
 ## Personal Overview
 I selected Selenium because it was my favourite aspect from my previous co-op. I had fixed automation test cases to ensure the correct web elements were being selected. Since I had a lot of fun with the project, I wanted to study the library again but use it with a different language. Previously, I used Selenium with Java, but the only difference is the syntax. Locating web elements functions in the exact same way.
