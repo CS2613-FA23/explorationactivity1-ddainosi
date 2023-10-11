@@ -9,4 +9,3 @@ textArea = driver.find_element(By.CSS_SELECTOR, "textarea.note-area")
 intro(textArea, driver)
 driver.close()
 print("Thank you for playing!")
-
