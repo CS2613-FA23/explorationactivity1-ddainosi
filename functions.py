@@ -27,6 +27,11 @@ def sel_text(textArea, timer, text):
     textArea.send_keys(text)
     time.sleep(timer)
 
+#
+def switch_to_tab(driver, link):
+    driver.get(link)
+    expected_title(driver, driver.title)
+
 #Function that makes sure the title matches the current window
 def expected_title(driver, title):
     try:
@@ -68,28 +73,24 @@ def cupcake_question(choice):
 
 #Navigates to a picture of Chica's cupcake
 def nav_to_cupcake(driver):
-    driver.get("https://drive.google.com/drive/folders/1VocJye7S1GrQnnM49CzSHB9PI9UvRpJn?usp=sharing")
-    expected_title(driver, driver.title)
+    switch_to_tab(driver, "https://drive.google.com/drive/folders/1VocJye7S1GrQnnM49CzSHB9PI9UvRpJn?usp=sharing")
     click_button(driver, "[aria-label='chica cupcake.jpeg Shared Image']")
     time.sleep(DEFAULT_WAIT)
     expected_title(driver, driver.title)
-    driver.get("https://blankslate.io")
-    expected_title(driver, driver.title)
+    switch_to_tab(driver, "https://blankslate.io")
 
 #Navigates to the good ending
 def good_ending(textArea, driver, choice):
     if choice == 1:
         sel_text(textArea, SHORTEST_WAIT, "Let me reward you:")
-    driver.get("https://drive.google.com/drive/folders/1ua1tIYD3njUUe9-E5dUVVszFzw5KL_l6?usp=sharing")
-    expected_title(driver, driver.title)
+    switch_to_tab(driver, "https://drive.google.com/drive/folders/1ua1tIYD3njUUe9-E5dUVVszFzw5KL_l6?usp=sharing")
     click_button(driver, "[aria-label='RPReplay_Final1696827204.mov Shared Video']")
     expected_title(driver, driver.title)
     time.sleep(EXTENDED_WAIT)
 
 #Navigates to the bad ending
 def bad_ending(driver):
-    driver.get("https://drive.google.com/drive/folders/1znQuG-00EmQ1mpuEU2npfnzIi8Dy6Tib?usp=sharing")
-    expected_title(driver, driver.title)
+    switch_to_tab(driver, "https://drive.google.com/drive/folders/1znQuG-00EmQ1mpuEU2npfnzIi8Dy6Tib?usp=sharing")
     click_button(driver, "[aria-label='RPReplay_Final1696827487.mov Shared Video']")
     expected_title(driver, driver.title)
     time.sleep(EXTENDED_WAIT)
@@ -120,8 +121,7 @@ def freddy(textArea, driver):
     sel_text(textArea, SHORTER_WAIT, "So Freddy is your favourite?")
     sel_text(textArea, SHORTER_WAIT, "Solid choice. He's my favourite too!")
     sel_text(textArea, SHORTER_WAIT, "In fact, here's a gift. You got the good ending:")
-    driver.get("https://drive.google.com/file/d/10tEap_4oLNQOh_8npAsEDGNmAlHImyWS/view?usp=drive_link")
-    expected_title(driver, driver.title)
+    switch_to_tab(driver, "https://drive.google.com/file/d/10tEap_4oLNQOh_8npAsEDGNmAlHImyWS/view?usp=drive_link")
     time.sleep(SHORTER_WAIT)
     good_ending(textArea, driver, 0)
 
