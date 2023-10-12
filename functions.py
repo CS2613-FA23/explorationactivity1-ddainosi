@@ -21,13 +21,13 @@ def intro(textArea, driver):
     sel_text(textArea, NORMAL_WAIT, "I have a question to ask you, click back to your terminal to answer it")
     fav_animatronic(textArea, driver)
 
-#Function to type text into BlankSlate.io
+#Function to type given text into BlankSlate.io
 def sel_text(textArea, timer, text):
     textArea.clear()
     textArea.send_keys(text)
     time.sleep(timer)
 
-#
+#Switches the tab to the given link and ensures the title matches the expected one
 def switch_to_tab(driver, link):
     driver.get(link)
     expected_title(driver, driver.title)
