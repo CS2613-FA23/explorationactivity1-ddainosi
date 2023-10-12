@@ -25,26 +25,19 @@ As stated in the introduction, this sample program demonstrates the Selenium lib
 Follow the listed steps below:
 - Under the ![Code](/media/code_button.png) button on GitHub, click **Download Zip**
 - Extract the **.zip** file contents into your `Downloads` folder on your device for simplicity.
-- If using the Terminal:
+- If using the Terminal, type the following:
   ```sh
   cd Downloads/explorationactivity1-ddainosi
   pip3 install selenium
   python3 main.py
   ```
-  - Type `python3 main.py` to run the program.
 - If using an IDE:
   - Open the project folder in the **Downloads** directory (**File -> Open Folder**).
   - In the IDE terminal, type `pip3 install selenium` to install the selenium library.
   - Run the code on _main.py_.
 
 ### What purpose does your program serve?
-The purpose of my program is to showcase the basics of Selenium.
-This includes:
-- Text being typed
-- Images being clicked
-- Videos being played
-- Navigating to a different website
-Also, my program serves for a source of entertainment. I wished to implement a way for the user to also interact with the program and not just sit and wait as it runs.
+The purpose of my program is to serve as a source of entertainment. I wished to implement a way for the user to also interact with the program and not just sit and wait as it runs.
 
 ### What would be some sample input/output?
 Throughout the game, you will be asked to type either one or two characters in the terminal. Without spoiling anything, your choices will either lead to the _good_ or _bad_ ending. The inputs you can choose from will be listed in your terminal:
