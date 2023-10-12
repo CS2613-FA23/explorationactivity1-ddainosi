@@ -6,7 +6,7 @@ Selenium is a testing tool used for automated web application testing [[ref]](ht
 
 ### How is it used?
 Below is some of the more common concepts in Selenium testing:
-**Locating Web Elements** 
+**Locating Web Elements** --> 
 By using the example page source below, commons ways to find a web element will be explained [[ref]](https://selenium-python.readthedocs.io/locating-elements.html):
 ```html
 <html>
@@ -27,7 +27,7 @@ By using the example page source below, commons ways to find a web element will 
 - By **CSS SELECTOR Part 1**: `info = driver.find_element(By.CSS_SELECTOR, 'p.info')` Variable _info_ points to the Login Info paragraph by specifying its CLASS (**"."** represents the ID attribute)
 - By **CSS SELECTOR Part 2**: `loginForm = driver.find_element(By.CSS_SELECTOR, 'form#loginForm')` Variable _loginForm_ points to the entire login form by specifying its CSS SELECTOR (**"#"** represents the ID attribute)
 
-**Actions** 
+**Actions** --> 
 Most common actions [[ref]](https://selenium-python.readthedocs.io/navigating.html):
 - `element.send_keys("some text")` sends the words "some text" into the input box the variable `element` is assigned to
 - `element.send_keys(Keys.RETURN)` functions as hitting the _RETURN_ button on the keyboard
@@ -35,7 +35,7 @@ Most common actions [[ref]](https://selenium-python.readthedocs.io/navigating.ht
 - `driver.find_element(By.ID, "submit").click()` finds the web element with the ID _submit_ and clicks it
 - `driver.get("http://www.example.com")` changes the tab to the _http://www.example.com_ website
 
-**Waits** 
+**Waits** -->
 There are two types of waits in Selenium [[ref]](https://selenium-python.readthedocs.io/waits.html):
 1. Explicit Waits
 2. Implicit Waits
