@@ -6,8 +6,8 @@ Selenium is a testing tool used for automated web application testing [[ref]](ht
 
 ### How is it used?
 Below is some of the more common concepts in Selenium testing:
-**Locating Web Elements** [[ref]](https://selenium-python.readthedocs.io/locating-elements.html)
-By using the example page source below, commons ways to find a web element will be explained:
+**Locating Web Elements** 
+By using the example page source below, commons ways to find a web element will be explained [[ref]](https://selenium-python.readthedocs.io/locating-elements.html):
 ```html
 <html>
  <body>
@@ -20,23 +20,23 @@ By using the example page source below, commons ways to find a web element will 
  </body>
 </html>
 ```
-- By **ID**: `loginForm = driver.find_element(By.ID, 'loginForm')` variable _loginForm_ points to the entire login form by specifying its ID
-- By **NAME**: `username = driver.find_element(By.NAME, 'username')` variable _username_ points to the username input box by specifying its NAME
-- By **CLASS**: `info = driver.find_element(By.CLASS_NAME, 'info')` variable _info_ points to the Login Info paragraph by specifying its CLASS
-- By **XPATH**: `loginForm = driver.find_element(By.XPATH, "//form[2]")` variable _loginForm_ points to the entire login form by specifying its XPATH (`//form[2]` points to the username input box since its the second element in the **form** tag)
-- By **CSS SELECTOR Part 1**: `info = driver.find_element(By.CSS_SELECTOR, 'p.info')` variable _info_ points to the Login Info paragraph by specifying its CLASS (**.** represents the ID attribute)
-- By **CSS SELECTOR Part 2**: `loginForm = driver.find_element(By.CSS_SELECTOR, 'form#loginForm')` variable _loginForm_ points to the entire login form by specifying its CSS SELECTOR (**#** represents the ID attribute)
+- By **ID**: `loginForm = driver.find_element(By.ID, 'loginForm')` Variable _loginForm_ points to the entire login form by specifying its ID
+- By **NAME**: `username = driver.find_element(By.NAME, 'username')` Variable _username_ points to the username input box by specifying its NAME
+- By **CLASS**: `info = driver.find_element(By.CLASS_NAME, 'info')` Variable _info_ points to the Login Info paragraph by specifying its CLASS
+- By **XPATH**: `loginForm = driver.find_element(By.XPATH, "//form[2]")` Variable _loginForm_ points to the entire login form by specifying its XPATH (`//form[2]` points to the username input box since its the second element in the **form** tag)
+- By **CSS SELECTOR Part 1**: `info = driver.find_element(By.CSS_SELECTOR, 'p.info')` Variable _info_ points to the Login Info paragraph by specifying its CLASS (**"."** represents the ID attribute)
+- By **CSS SELECTOR Part 2**: `loginForm = driver.find_element(By.CSS_SELECTOR, 'form#loginForm')` Variable _loginForm_ points to the entire login form by specifying its CSS SELECTOR (**"#"** represents the ID attribute)
 
-**Actions** [[ref]](https://selenium-python.readthedocs.io/navigating.html)
-Most common actions:
-- `element.send_keys("some text")` sends the words "some text" into the input box the varible `element` is assigned to
+**Actions** 
+Most common actions [[ref]](https://selenium-python.readthedocs.io/navigating.html):
+- `element.send_keys("some text")` sends the words "some text" into the input box the variable `element` is assigned to
 - `element.send_keys(Keys.RETURN)` functions as hitting the _RETURN_ button on the keyboard
 - `element.clear()` clears all the text in the `elem` web element
 - `driver.find_element(By.ID, "submit").click()` finds the web element with the ID _submit_ and clicks it
 - `driver.get("http://www.example.com")` changes the tab to the _http://www.example.com_ website
 
-**Waits** [[ref]](https://selenium-python.readthedocs.io/waits.html)
-There are two types of waits in Selenium:
+**Waits** 
+There are two types of waits in Selenium [[ref]](https://selenium-python.readthedocs.io/waits.html):
 1. Explicit Waits
 2. Implicit Waits
 
