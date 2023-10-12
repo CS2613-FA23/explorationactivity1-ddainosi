@@ -2,7 +2,7 @@
 # ExplorationActivity1
 
 ## Introduction
-My name is Daphne Dairo-Singerr, and for my first exploration acitivity, I created a small interactive game using the Selenium library in Python. This game includes content from the Five Nights at Freddy's horror game. Please read the _Before You Play_ section before running the game:
+My name is Daphne, and for my first exploration acitivity, I created a small interactive game using the Selenium library in Python. This game includes content from the Five Nights at Freddy's horror game created by Scott Cawthon. Please read the _Before You Play_ section before running the game:
 
 ## Before You Play
 - Make sure you have headphones connected to your device. 
@@ -24,12 +24,13 @@ As stated in the introduction, this sample program demonstrates the Selenium lib
 ### How does someone run your program?
 Follow the listed steps below:
 - Under the ![Code](/media/code_button.png) button on GitHub, click **Download Zip**
-- Extract the .zip file contents into your Downloads folder on your device for simplicity.
+- Extract the **.zip** file contents into your `Downloads` folder on your device for simplicity.
 - If using the Terminal:
-  - Change to the project directory:
-    - In your terminal, first type `cd Downloads/explor`, then press the **Tab** button on your keyboard and hit **Enter**.
-    - You should now be in the project directory.
-  - In the terminal, type `pip3 install selenium` to install the selenium library.
+  ```sh
+  cd Downloads/explorationactivity1-ddainosi
+  pip3 install selenium
+  python3 main.py
+  ```
   - Type `python3 main.py` to run the program.
 - If using an IDE:
   - Open the project folder in the **Downloads** directory (**File -> Open Folder**).
@@ -55,3 +56,5 @@ Who is your favourite FNAF 1 animatronic? Select one of the 4 options below:
 (fo)xy
 Your answer: f
 ```
+
+**Credits to Five Night's at Freddy's goes to its creator Scott Cawthon**
