@@ -49,13 +49,13 @@ Some common examples include:
 _Implicit Waits_: WebDriver waits a given amount of time to search for an element to appear in the DOM. If the element does not appear within the specified time, a _NoSuchElementExcepction_ will be thrown.
 
 ### Functionalities (From my Program)
-- `driver = webdriver.Chrome()` Lets the program know that the testing will be happening on the Chrome web browser
-- `driver.get("https://blankslate.io")` The web browser (Chrome in this case) switches to the provided link
-- `textArea = driver.find_element(By.CSS_SELECTOR, "textarea.note-area")` Assigns the provided CSS selector to the variable _textArea_. You can read about how to get and specify CSS selectors [here](https://www.swtestacademy.com/css-selenium/)
-- `textArea.send_keys(text)` Enters the provided text into an input element
-- `textArea.clear()` Clears the content in an input element
-- `button.click()` Clicks the button. `button` is a variable in this piece of code. A way to assign `button` a web element is by using a CSS selector stated in point 3.
-- `driver.close()` Closes the web browser
+- `driver = webdriver.Chrome()` lets the program know that the testing will be happening on the Chrome web browser
+- `driver.get("https://blankslate.io")` switches the tab to the provided link
+- `textArea = driver.find_element(By.CSS_SELECTOR, "textarea.note-area")` assigns the provided CSS selector to the variable _textArea_. You can read about how to get and specify CSS selectors [here](https://www.swtestacademy.com/css-selenium/)
+- `textArea.send_keys(text)` enters the provided text into an input element
+- `textArea.clear()` clears the content in an input element
+- `button.click()` clicks the button. `button` is a variable in this piece of code. A way to assign `button` a web element is by using a CSS selector stated in point 3.
+- `driver.close()` closes the web browser
 ```Python
 def click_button(driver, element):
     try:
